@@ -31,8 +31,6 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
             //Data seeding
-
-
             //base.OnModelCreating(modelBuilder);
         }
 
