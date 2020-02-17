@@ -15,6 +15,7 @@ namespace eShopSolution.Data.EF
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Configure using Fluent API
             modelBuilder.ApplyConfiguration(new CartConfiguration());
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
@@ -28,6 +29,13 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new ProductTranslationConfiguration());
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
+
+            //Data seeding
+            //modelBuilder.Entity<AppConfig>().HasData(
+            //    new AppConfig() { Key = "HomeTitle", Value = "This is home page of eShopSolution" },
+            //    new AppConfig() { Key = "HomeKeyword", Value = "This is keyword of eShopSolution" },
+            //    new AppConfig() { Key = "HomeDescription", Value = "This is description of eShopSolution" }
+            //    );
 
             //base.OnModelCreating(modelBuilder);
         }
