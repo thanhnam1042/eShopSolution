@@ -31,12 +31,6 @@ namespace eShopSolution.Data.EF
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
 
             //Data seeding
-            //modelBuilder.Entity<AppConfig>().HasData(
-            //    new AppConfig() { Key = "HomeTitle", Value = "This is home page of eShopSolution" },
-            //    new AppConfig() { Key = "HomeKeyword", Value = "This is keyword of eShopSolution" },
-            //    new AppConfig() { Key = "HomeDescription", Value = "This is description of eShopSolution" }
-            //    );
-
             //base.OnModelCreating(modelBuilder);
         }
 
